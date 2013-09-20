@@ -1,0 +1,29 @@
+{
+  "name": "find-file-sync",
+  "version": "0.0.1",
+  "description": "Find a file synchronously within a directory.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fiveisprime/find-file-sync.git"
+  },
+  "keywords": [
+    "find",
+    "search",
+    "file",
+    "sync",
+    "synchronous"
+  ],
+  "author": "Matt Hernandez <matt@modulus.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fiveisprime/find-file-sync/issues"
+  },
+  "devDependencies": {
+    "jasmine-node": "~1.11.0",
+    "jshint": "~2.1.10"
+  }
+}
