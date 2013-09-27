@@ -23,4 +23,11 @@ describe('find', function() {
     expect(found).not.toBeNull();
     expect(found).toEqual(path.join('spec', 'fixtures', 'ignored', 'nested.js'));
   });
+
+  it('should find files in an array', function() {
+    var found = find('spec/fixtures', ['invalid', 'test.js']);
+
+    expect(found).not.toBeNull();
+    expect(found).toEqual(path.join('spec', 'fixtures', 'test.js'));
+  });
 });

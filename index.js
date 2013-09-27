@@ -15,11 +15,12 @@ module.exports = function(dir, search, exclude) {
 
   exclude = exclude || [];
   if (typeof exclude === 'string' && exclude.length > 0) exclude = [exclude];
+  if (typeof search === 'string') search = [search];
 
   if (!fs.existsSync(dir)) return null;
 
   if (fs.statSync(dir).isFile()) {
-    if (dir === search) return dir;
+    if (search.indexOf(dir) >= 0) return dir;
     return null;
   }
 
@@ -38,7 +39,7 @@ module.exports = function(dir, search, exclude) {
       continue;
     }
 
-    if (contents[i] === search) return fullPath;
+    if (search.indexOf(contents[i]) >= 0) return fullPath;
   }
 
   while ((directory = directories.pop())) {
@@ -57,7 +58,7 @@ module.exports = function(dir, search, exclude) {
         continue;
       }
 
-      if (contents[j] === search) return path.join(directory, contents[j]);
+      if (search.indexOf(contents[j]) >= 0) return path.join(directory, contents[j]);
     }
   }
 
