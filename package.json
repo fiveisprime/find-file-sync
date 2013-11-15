@@ -23,7 +23,8 @@
     "url": "https://github.com/fiveisprime/find-file-sync/issues"
   },
   "devDependencies": {
-    "jasmine-node": "~1.11.0",
-    "jshint": "~2.1.10"
+    "jshint": "~2.1.10",
+    "should": "~2.1.0",
+    "mocha": "~1.14.0"
   }
 }
