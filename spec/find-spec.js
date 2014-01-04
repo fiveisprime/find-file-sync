@@ -1,8 +1,6 @@
 var path = require('path')
   , find = require('../index');
 
-require('should');
-
 describe('find', function() {
 
   it('should find files', function() {
