@@ -1,9 +1,7 @@
-find-file-sync [![Build Status](https://travis-ci.org/fiveisprime/find-file-sync.png?branch=master)](https://travis-ci.org/fiveisprime/find-file-sync)
+find-file-sync [![Build Status](https://travis-ci.org/fiveisprime/find-file-sync.svg?branch=master)](https://travis-ci.org/fiveisprime/find-file-sync)
 ==============
 
 Find a file recursively from top to bottom. Synchronously.
-
-[![NPM](https://nodei.co/npm/find-file-sync.png)](https://nodei.co/npm/find-file-sync/)
 
 # Example
 
