@@ -1,6 +1,6 @@
 {
   "name": "find-file-sync",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Find a file synchronously within a directory.",
   "main": "index.js",
   "scripts": {
